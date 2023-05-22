@@ -7,6 +7,11 @@
 //Les données qu'il reçoit pour la couleur sont un code RGB sous le format suivant: R/G/B
 //Il décortique le message pour en ressortir les valeurs nécessaires et les envoie à la bande DEL
 
+
+//Sources
+//https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-use
+//https://docs.arduino.cc/tutorials/uno-wifi-rev2/uno-wifi-r2-mqtt-device-to-device
+
 #include <ArduinoMqttClient.h>
 #include <WiFiNINA.h>
 #include <Adafruit_NeoPixel.h>

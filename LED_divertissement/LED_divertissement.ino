@@ -1,3 +1,12 @@
+//Auteur: Tom Pitou
+//Date de création: 24 avril 2023
+//Date de dernière modification: 21 mai 2023
+//Description: Code permettant au microcontrôleur d'allumer, de modifier la couleur et l'intensité d'une bande DEL en fonction des données reçues par MQTT
+//Le microcontrôleur se connecte au réseau WIFI, puis au broker MQTT et attend l'arrivée de données
+//Dans le cas de l'allumage de la bande, il reçoit un "1" pour allumer et un "0" pour éteindre
+//Les données qu'il reçoit pour la couleur sont un code RGB sous le format suivant: R/G/B
+//Il décortique le message pour en ressortir les valeurs nécessaires et les envoie à la bande DEL
+
 #include <ArduinoMqttClient.h>
 #include <WiFiNINA.h>
 #include <Adafruit_NeoPixel.h>

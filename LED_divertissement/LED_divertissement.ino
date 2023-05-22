@@ -1,6 +1,6 @@
 //Auteur: Tom Pitou
 //Date de création: 24 avril 2023
-//Date de dernière modification: 21 mai 2023
+//Date de dernière modification: 22 mai 2023
 //Description: Code permettant au microcontrôleur d'allumer, de modifier la couleur et l'intensité d'une bande DEL en fonction des données reçues par MQTT
 //Le microcontrôleur se connecte au réseau WIFI, puis au broker MQTT et attend l'arrivée de données
 //Dans le cas de l'allumage de la bande, il reçoit un "1" pour allumer et un "0" pour éteindre
@@ -12,8 +12,11 @@
 //https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-use
 //https://docs.arduino.cc/tutorials/uno-wifi-rev2/uno-wifi-r2-mqtt-device-to-device
 
+//Librairie pour la communication MQTT
 #include <ArduinoMqttClient.h>
+//Librairie pour la connexion au réseau WIFI
 #include <WiFiNINA.h>
+//Librairie pour la bande DEL
 #include <Adafruit_NeoPixel.h>
 
 //Broche par laquel seront envoyées les données permettant de contrôler la LED
